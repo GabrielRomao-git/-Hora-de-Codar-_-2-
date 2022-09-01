@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var media = 0;
+        
+        
+        function numero1 () {
+        var n1 = parseFloat(prompt("Digite um número"));
+
+        if (n1 <= 0 || n1 > 10 || isNaN (n1)){
+
+            alert("Tente Novamente");
+            numero1();
+        }
+        else{ 
+            media +=n1;
+            numero2();
+        }
+    }
+
+        function numero2() {
+        var n2 = parseFloat(prompt("Digite um segundo número"));
+
+        if (n2 <= 0 || n2 > 10 || isNaN (n2)){
+            alert("Tente Novamente");
+            numero2();
+        }
+
+        else{
+            media += n2;
+            numero3();
+        }}
+
+        function numero3(){
+
+        var n3 = parseFloat(prompt("Digite um terceiro número"));
+
+        if (n3 <= 0 || n3 >10 || isNaN (n3)){
+            alert("Tente Novamente");
+            numero3();
+        }
+        else{
+            media += n3;
+            numero4();
+        }}
+
+        function numero4(){
+
+        var n4 = parseFloat(prompt("Digite um quarto número"));
+
+        if (n4 <= 0 || n4 > 10 || isNaN(n4)){
+            alert("Tente Novamente");
+            numero4();
+        }
+        else {
+            media += n4;
+          resultado();
+        }}
+        function resultado(){
+        media = media /4;
+        if(media >= 5){
+            alert ("Congatrulations my friendlys!  " + media)
+            media = 0
+        }else {
+            alert("Tente novamente sua Jacá")
+            media = 0
+            numero1();
+        }}
+
+
+        numero1();
+        
+        </script>
+
+</head>
+<body>
+    
+</body>
+</html>

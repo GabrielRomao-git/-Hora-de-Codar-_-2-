@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var n1 = parseInt(prompt("Escolha um número"));
+        var n2 = parseInt(prompt("Escolha outro número"));
+
+        
+
+        function inicio (){
+            var escolha = parseInt(prompt("Agora uma operação a ser realizada " +"sendo 1:Adição " + "2:Subtração "+ "3:Divisão " + "4:Multiplicação"));
+
+            if(escolha === 1){
+                adicao();
+            } else if(escolha === 2){
+                subtracao();
+            } else if (escolha === 3){
+                divisao();
+            } else if (escolha === 4){
+                multiplicacao();
+            } else{
+                erro();
+            }
+            }
+            
+
+            function adicao(){
+                var conta = n1 + n2
+                alert(n1 + " + " + n2 + " = " + conta)
+                
+                inicio();
+            } 
+
+            function subtracao(){
+                var conta1 = n1 - n2;
+                alert(n1 + " - " + n2 + " = " + conta1)
+                
+                inicio();
+            }
+
+            function divisao(){
+                var conta2 = n1 / n2;
+                alert(n1 + " / " + n2 + " = " + conta2)
+                
+                inicio();
+            }
+
+            function multiplicacao(){
+                var conta3 = n1 * n2;
+                alert(n1 + " * " + n2 + " = " + conta3)
+                
+                inicio();
+            }
+            function erro(){
+                alert("Informe um valor de 1 a 4 .");
+                inicio();
+            }
+            inicio();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
